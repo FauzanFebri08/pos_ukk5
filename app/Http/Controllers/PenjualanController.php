@@ -16,17 +16,9 @@ class PenjualanController extends Controller
      */
     public function index(SearchRequest $request)
 {
-    $user = Auth::user();
     $keyword = $request->input('search');
 
     $sales = Penjualan::query()
-
-    
-    ->when($user->role->name === 'kasir', function ($query) use ($user) {
-        $query->where('user_id', $user->id);
-    })
-
-
     ->when($keyword, function ($query) use ($keyword) {
         $query->whereHas('user', function ($q) use ($keyword) {
             $q->where('name', 'like', '%' . $keyword . '%');

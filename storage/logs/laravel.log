@@ -1,0 +1,15 @@
+[2026-09-16 04:10:30] local.ERROR: Too many arguments to "db:seed" command, expected arguments "class". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Too many arguments to \"db:seed\" command, expected arguments \"class\". at C:/laragon/www/pos_ukk5/vendor/symfony/console/Input/ArgvInput.php:199)
+[stacktrace]
+#0 C:/laragon/www/pos_ukk5/vendor/symfony/console/Input/ArgvInput.php(92): Symfony/Component/Console/Input/ArgvInput->parseArgument()
+#1 C:/laragon/www/pos_ukk5/vendor/symfony/console/Input/ArgvInput.php(77): Symfony/Component/Console/Input/ArgvInput->parseToken()
+#2 C:/laragon/www/pos_ukk5/vendor/symfony/console/Input/Input.php(53): Symfony/Component/Console/Input/ArgvInput->parse()
+#3 C:/laragon/www/pos_ukk5/vendor/symfony/console/Command/Command.php(295): Symfony/Component/Console/Input/Input->bind()
+#4 C:/laragon/www/pos_ukk5/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run()
+#5 C:/laragon/www/pos_ukk5/vendor/symfony/console/Application.php(1102): Illuminate/Console/Command->run()
+#6 C:/laragon/www/pos_ukk5/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand()
+#7 C:/laragon/www/pos_ukk5/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun()
+#8 C:/laragon/www/pos_ukk5/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run()
+#9 C:/laragon/www/pos_ukk5/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle()
+#10 C:/laragon/www/pos_ukk5/artisan(16): Illuminate/Foundation/Application->handleCommand()
+#11 {main}
+"} 
